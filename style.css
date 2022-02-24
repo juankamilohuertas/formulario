@@ -1,0 +1,89 @@
+body{
+    background-image: url(/img/code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+body::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: black;
+}
+h1{
+    color: white;
+    padding: 2%;
+    margin: 0%;
+    text-align: center;
+    text-decoration: underline;
+    font-family: italic;
+}
+.conteData{
+    background-color: lawngreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.conteData p{
+    font-size: 3rem;
+}
+.contenedorPadre{
+    background: rgba(255, 255, 255, 0.13);
+    width: 80vw; 
+    padding: 10px; 
+    margin-top: 120px;
+}
+label{
+    color: #ffffff;
+    font-size: larger;
+    font-family: serif;
+}
+.conteHijos{
+    display: flex;
+}
+.conteHijos div{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 2%;
+}
+.conteHijos input{
+    width: 100%;
+    padding: 6px 0px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    text-indent: 4px;
+}
+.hijo_1{
+    margin-right: 5px;
+}
+.btnEnvio{
+ text-align: center;
+}
+.btnEnvio input{
+    width: 100%;
+    padding: 6px 0px;
+    margin-top: 20px;
+    background-color: #3d5e79;
+    color: white;
+    font-size: larger;
+    border: none;
+}
+.btnEnvio input:hover{
+    background-color: #283a49;
+    box-shadow: 1px 5px 15px  black;
+    cursor: pointer;
+}
